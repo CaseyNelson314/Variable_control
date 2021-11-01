@@ -9,6 +9,20 @@ version   Arduino 1.8.16
 Author    CaseyNelson314
 Date      2021/11/01
 ```
+# Program
+Clock
+```
+Clickdata = data * !(data = digitalRead(sw));
+data : 前回のデータ !(data = digitalRead(sw)) : 現在のデータ
+```
+Toggle
+```
+XOR演算によってClickdataがHIGHの場合反転処理を行う
+```
+Count
+```
+ClickdataがHIGHになるごとにカウントアップ
+```
 # Process
 ```
 newdata = !digitalRead(sw);
