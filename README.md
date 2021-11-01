@@ -9,7 +9,7 @@ version   Arduino 1.8.16
 Author    CaseyNelson314
 Date      2021/11/01
 ```
-# 改良過程
+# Process
 ```
 newdata = !digitalRead(sw);
 if (olddata == 0 && newdata == 1) {
