@@ -1,7 +1,7 @@
 # Variable-control
 ```
 Click,Toggle,Count動作
-演算順序の性質から前回のループからのデータと現在のループからのデータを1行で比較しています
+演算順序の性質から前回,現在のループからのデータを1行で比較しています
 ```
 # Data
 ```
@@ -14,7 +14,7 @@ Date      2021/11/01
 ```
 Clickdata = data * !(data = digitalRead(sw));
 
-data : 前回データ  !(data = digitalRead(sw)) : 現在データ
+data : 前回データ    !(data = digitalRead(sw)) : 現在データ
 前回LOW、現在がHIGHの場合 Clickdata = HIGH
 ```
 ・Toggle
