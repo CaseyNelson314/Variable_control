@@ -27,7 +27,7 @@ ClickdataがHIGHになるごとにカウントアップ
 ```
 # Process
 ```
-newdata = !digitalRead(sw);
+newdata = !digitalRead(sw); 注swpinはpullup
 if (olddata == 0 && newdata == 1) {
   Clickdata = 1;
 } else {
@@ -57,7 +57,7 @@ Clickdata = newdata * !(newdata = digitalRead(sw));
 ```
 ↓
 ```
-Clickdata = data * !(data = digitalRead(sw));   //sw pullupネ☆
+Clickdata = data * !(data = digitalRead(sw));
 ```
 ```
 Clickdata = !data * (data = digitalRead(sw));   //pullupなし
