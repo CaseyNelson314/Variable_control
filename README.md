@@ -24,7 +24,7 @@ XOR演算によってClickdataがHIGHの場合反転処理を行う
 ClickdataがHIGHになるごとにカウントアップ
 ```
 # Process
-1.Click初期
+1. Click初期
 ```
 newdata = !digitalRead(sw);       //注swpinはpullup
 if (olddata == 0 && newdata == 1) {
@@ -34,27 +34,27 @@ if (olddata == 0 && newdata == 1) {
 }
 olddata = newdata;
 ```
-2.条件式から代入式へ
+2. 条件式から代入式へ
 ```
 newdata = !digitalRead(sw);
 Clickdata = !olddata * newdata;
 olddata = newdata;
 ```
-3.ぷぅ
+3. ぷぅ
 ```
 olddata = newdata;
 newdata = !digitalRead(sw);
 Clickdata = !olddata * newdata;
 ```
-4.ムリヤリ
+4. ムリヤリ
 ```
 Clickdata = !newdata * (newdata = !digitalRead(sw));
 ```
-5.反転(!)削減
+5. 反転(!)削減
 ```
 Clickdata = newdata * !(newdata = digitalRead(sw));
 ```
-6.へんすうなまえかえた
+6. へんすうなまえかえた
 ```
 Clickdata = data * !(data = digitalRead(sw));
 ```
