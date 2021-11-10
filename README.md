@@ -2,11 +2,11 @@
 Click,Toggle,Count動作
 演算順序の性質から前回,現在のループからのデータを1行で比較しています
 # Data
-- version   Arduino 1.8.16
-- Author    CaseyNelson314
-- Date      2021/11/01
+- *Arduino 1.8.16*
+- *CaseyNelson314*
+- *2021/11/01*
 # Program
-- Click
+- *Click*
 ```
 Clickdata = data * !(data = digitalRead(sw));
 
@@ -15,11 +15,11 @@ data                        : 前回データ
 
 前回LOW、現在がHIGHの場合 Clickdata = HIGH
 ```
-- Toggle
+- *Toggle*
 ```
 XOR演算によってClickdataがHIGHの場合反転処理を行う
 ```
-- Count
+- *Count*
 ```
 ClickdataがHIGHになるごとにカウントアップ
 ```
