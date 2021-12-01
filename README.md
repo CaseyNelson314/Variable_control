@@ -1,9 +1,14 @@
 # Variable-control
 Click,Toggle,Count動作
 
-[Library](https://github.com/CaseyNelson314/Variable-control/blob/main/VariableController.h)
+Click, toggle, and count actions
 
 演算順序の性質から前回,現在のループからのデータを1行で比較しています
+
+Due to the nature of the order of operations, the data from the previous and current loops are compared in a single line.
+
+[Library](/VariableController.h)
+
 # Data
 - *Arduino 1.8.16*
 - *CaseyNelson314*
@@ -21,10 +26,14 @@ data                        : 前回データ
 - *Toggle*
 ```
 XOR演算によってClickdataがHIGHの場合反転処理を行う
+
+Invert when Clickdata is HIGH by XOR operation
 ```
 - *Count*
 ```
 ClickdataがHIGHになるごとにカウントアップ
+
+Count up each time Clickdata goes HIGH
 ```
 # Process
 1. Click初期
