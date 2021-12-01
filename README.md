@@ -1,6 +1,8 @@
 # Variable-control
 Click,Toggle,Count動作
 
+[Library](https://github.com/CaseyNelson314/Variable-control/blob/main/VariableController.h)
+
 演算順序の性質から前回,現在のループからのデータを1行で比較しています
 # Data
 - *Arduino 1.8.16*
