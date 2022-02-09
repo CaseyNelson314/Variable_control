@@ -48,13 +48,13 @@ newdata = !digitalRead(sw);
 Clickdata = !olddata * newdata;
 olddata = newdata;
 ```
-3. ぷぅ
+3. 
 ```
 olddata = newdata;
 newdata = !digitalRead(sw);
 Clickdata = !olddata * newdata;
 ```
-4. ムリヤリ
+4. 
 ```
 Clickdata = !newdata * (newdata = !digitalRead(sw));
 ```
@@ -62,7 +62,7 @@ Clickdata = !newdata * (newdata = !digitalRead(sw));
 ```
 Clickdata = newdata * !(newdata = digitalRead(sw));
 ```
-6. へんすうなまえかえた
+6. 
 ```
 Clickdata = data * !(data = digitalRead(sw));
 ```
