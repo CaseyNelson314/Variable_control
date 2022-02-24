@@ -1,7 +1,7 @@
 # Variable-control
 Click,Toggle,Count動作
 
-演算順序の性質から前回,現在のループからのデータを比較しています
+演算順序の性質をつかって前回,現在のループからのデータを比較しておる
 
 [Library](/VariableController.h)
 
